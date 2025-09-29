@@ -12,7 +12,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        // Devuelve la vista que está en resources/views/products/index.blade.php
+        return view('products.index');
     }
 
     /**
@@ -20,7 +21,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        // Devuelve la vista para crear un nuevo producto
+        return view('products.create');
     }
 
     /**
@@ -28,38 +30,39 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Aún no hacemos nada aquí
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Product $product)
+    public function show(string $id)
     {
-        //
+        // Aún no hacemos nada aquí
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Product $product)
+    public function edit(string $id)
     {
-        //
+        // Devuelve la vista para editar un producto
+        return view('products.edit');
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Product $product)
+    public function update(Request $request, string $id)
     {
-        //
+        // Aún no hacemos nada aquí
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Product $product)
+    public function destroy(string $id)
     {
-        //
+        // Aún no hacemos nada aquí
     }
 }
